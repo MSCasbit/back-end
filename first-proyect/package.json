@@ -1,0 +1,20 @@
+{
+  "name": "first-proyect",
+  "version": "1.0.0",
+  "description": "This is my first proyect in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kodemia",
+    "node",
+    "study",
+    "mauricio"
+  ],
+  "author": "castillo_smauricio292@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "kodemia-api-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "say-hi": "echo 'HI!' && echo 'HI again'",
+    "start": "node index.js",
+    "test": "echo 'test script'",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

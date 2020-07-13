@@ -8,7 +8,7 @@ const server = http.createServer((request, response) => {
     })
 
     console.log('metodo', request.method)
-    if(request.url === '/adios'){
+    if (request.url === '/adios') {
         response.write('<h1>ADIOS!</h1>')
     }
     else if (request.method === 'GET') {

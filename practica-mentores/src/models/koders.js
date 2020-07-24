@@ -21,7 +21,18 @@ const koderSchema = new mongoose.Schema({
             'female',
             'nonbinary'
         ]
+    },
+    email: {
+        type: String,
+        request: true,
+        match: /^.+@.+\..+$/
+    },
+    password: {
+        type: String,
+        request: true,
+        min: 1
     }
+    // 8.) es match con cualquier caracter 
 })
 
 module.exports = mongoose.model('koders', koderSchema)

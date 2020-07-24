@@ -2,8 +2,22 @@ const express = require('express')
 const router = express.Router()
 
 const koders = require('../usecases/koders')
+const { request, response } = require('express')
 
-router.get('/', async (request, response) => {
+
+router.use((request, response, next) =>{
+    console.log('middleware a nivel de router:', request.mau),
+    next()
+},(request, response, next) =>{
+    console.log('middleware a nivel de router 2:'),
+    next()
+})
+
+router.get('/', (request, response, next) => {
+    console.log('middleware de endpoint GET koders')
+    next()
+},
+async (request, response) => {
     try {
         const allKoders = await koders.getAll()
         response.json({
